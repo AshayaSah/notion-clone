@@ -8,6 +8,7 @@ import {
 } from "@clerk/clerk-react";
 import { useUser } from "@clerk/nextjs";
 import { SidebarTrigger } from "./ui/sidebar";
+import Breadcrumbs from "./Breadcrumbs";
 
 function Header() {
   const { user } = useUser();
@@ -24,6 +25,7 @@ function Header() {
         </div>
 
         {/* BreadCrums  */}
+        {/* <Breadcrumbs></Breadcrumbs> */}
 
         <div>
           <SignedOut>
